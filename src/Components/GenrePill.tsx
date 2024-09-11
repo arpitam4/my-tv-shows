@@ -1,7 +1,9 @@
-import { memo } from "react";
-
 const GenrePill = ({ name }: { name: string }) => {
-  return <p className="font-semibold">{name}</p>;
+  return (
+    <div className="px-3 py-1 bg-gray-300 text-black font-semibold rounded-sm m-1">
+      {name}
+    </div>
+  );
 };
 
-export default memo(GenrePill);
+export default GenrePill;
